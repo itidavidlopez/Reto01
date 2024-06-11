@@ -1,6 +1,8 @@
 name: Deploy
 on:
   workflow_dispatch:
+  issues:
+    types: [opened, edited, milestoned]
 env:
   entorno: dev
 jobs:
